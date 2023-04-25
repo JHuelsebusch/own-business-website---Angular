@@ -27,6 +27,7 @@
 }
 
 body {
+    margin: 0;
     background-color: var(--green);
     font-size: var(--fs);
     font-family: var(--f);
@@ -43,4 +44,20 @@ h2 {
 
 h3 {
     font-size: var(--h3);
+}
+
+.btn {
+    padding: 15px 20px;
+    background-color: var(--darkgreen);
+    color: var(--white);
+    font-size: var(--fs);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 125ms ease-out;
+    &:hover {
+        transform: scale(1.2);
+        background-color: var(--lightgreen);
+        transition: all 125ms ease-in;
+    }
 }
