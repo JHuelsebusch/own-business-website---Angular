@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+    font-family: 'roboto';
+    src: url(./assets/font/Roboto/Roboto-Regular.ttf);
+    font-family: 'roboto-bold';
+    src: url(./assets/font/Roboto/Roboto-Bold.ttf);
+    font-family: 'roboto-black';
+    src: url(./assets/font/Roboto/Roboto-Black.ttf);
+}
+
 :root {
     --green: #027b77;
     --darkgreen: #00514e;
@@ -7,4 +16,31 @@
     --lightgreen: #00d1c1;
     --white: #ffffff;
     --black: #000000;
+    --fs: 16px; //font-size
+    --h1: 105px;
+    --h2: 40px;
+    --h3: 20px;
+    --f: roboto, sans-serif; //font
+    --fbo: roboto-bold, sans-serif;
+    --fbl: roboto-black, sans-serif;
+    --ppage: 0px 200px; //padding page
+}
+
+body {
+    background-color: var(--green);
+    font-size: var(--fs);
+    font-family: var(--f);
+    color: var(--white);
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
 }

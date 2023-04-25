@@ -1,0 +1,24 @@
+nav {
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--ppage);
+    .logo {
+        object-fit: contain;
+        height: 50px;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: var(--h3);
+        }
+    }
+}
