@@ -89,7 +89,7 @@ services = [{
     <br> Das ist kein Problem! <br> Für Teilnehmer und Kunden unserer Partner bieten wir eine exklusive Überprüfung deines Berichtes an! <br> Melde dich gerne bei uns!`
 }];
 
-currentTest = 1;
+currentTest = 0;
 changeTest(i: number) {
  this.currentTest = i; 
 }
