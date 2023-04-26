@@ -2,6 +2,7 @@ nav {
     height: 70px;
     width: 100%;
     box-sizing: border-box;
+    background-color: var(--green);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,6 +12,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
     .logo {
         object-fit: contain;
         height: 50px;
@@ -23,6 +25,27 @@ nav {
             text-decoration: none;
             color: var(--white);
             font-size: var(--h3);
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: -2px;
+                left: 0;
+                background-color: var(--lightgreen);
+                transform-origin: bottom right;
+                transition: transform 225ms ease-out;
+            }
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+            &:hover {
+                color: var(--lightgreen);
+                transition: 225ms ease-out;
+            }
         }
     }
 }
