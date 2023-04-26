@@ -20,8 +20,7 @@ services = [{
     'img': 'img2.jpg',
     'description': `Jeder Hersteller und/oder Importeur muss sicherstellen, dass seine Produkte bei einem vorhersehbaren Gebrauch keinerlei Auswirkungen auf die Gesundheit des Verwenders haben. 
     Dies gilt für jegliche Arten von Bedarfsgegenständen. <br>
-    <br>
-    Unsere Chemiekalienanalyse enthält - je nach Kundenwunsch - u.A: <br>
+    Unsere Chemiekalienanalyse enthält - je nach Kundenwunsch - u.A:
     <ul><li>Polyzyklische Aromatische Kohlenwasserstoffe (PAH)</li>
     <li>Kurzkettige Chlorparaffine (SCCP)</li>
     <li>Schwermetalrückstände</li>
@@ -34,8 +33,7 @@ services = [{
     'description': `Lebensmittel kommen im Haushalt mit vielen Bedarfsgegenständen in Berührung - sei es bei der Lagerung oder Aufbewahrung, bei der Zubereitung von Speisen oder Servieren von Gerichten. <br>
     Für all diese Artikel gelten strenge gesetzliche Vorgaben. In erster Linie dürfen sie keine Gefahr für die Gesundheit darstellen. Es dürfen keinerlei Stoffe vom Gegenständen auf die Lebensmittel übergehen, 
     welche toxisch sind, zu einer unvertretbaren Änderung des Lebensmittel führen oder eine Veränderung des Geruchs oder Geschmacks bewirken. <br>
-    <br>
-    Unsere Angebote enthalten: <br>
+    Unsere Angebote enthalten:
     <ul><li>Sensorische Prüfung</li>
     <li>Prüfung der Gesamtmigration</li>
     <li>viele weitere materialabhängige Prüfungen</li>
@@ -47,8 +45,7 @@ services = [{
     'description': `Elektrische betriebene Artikel können ein erhebliches Risiko darstellen. Sei es durch Stromschläge, Überhitzungen oder Explosionen. Dadurch gibt es eine Reihe von Normen und Standards, die es einzuhalten gilt. 
     Hier den Übersicht zu behalten ist nicht leicht. <br>
     Mit unserer Unterstützung erhältst du einen individuellen Überblick zu deinem Produkt. <br>
-    <br>
-    Unsere Angebote: <br>
+    Unsere Angebote: 
     <ul><li>Elektromagnetische Verträglichkeit (EMC)</li>
     <li>Niederspannungsrichtlinie (LVD)</li>
     <li>Ristriction of Hazard Substances (RoHS)</li>
@@ -61,7 +58,6 @@ services = [{
     'description': `Die Sicherheit und Qualität von Spiel- und Freizeitartikeln gerät immer wieder in den Focus der Öffentlichenkeit.
     Regelmäßig werden Belastungen von Weichmachern, Cadium, Blei, Nickel, etc festgestellt, die zu einem vollständigen Produktruf führen. <br>
     Wir helfen dir die Sicherheit und Qualität deines Produktes zu gewährleisten.<br>
-    <br>
     Unser Angebot umfasst unter anderem:
     <ul><li>Physikalische Prüfung (scharfe Spitzen und Kanten)</li>
     <li>Kleinteilüberprüfung</li>
@@ -78,8 +74,7 @@ services = [{
     'description': `Überprüfe deine Produktqualität bevor deine Ware das Werk oder Lagerhaus verlässt. <br>
     Wähle deine Qualitätscheckliste aus vielen Standardoptionen oder entwerfe deine ganz eigenen Spezifikationen. Geschulte und spezialisierte Inspektoren verschaffen sich einen Überblick und prüfen deine Bestellung anhand deiner Spezifikationen. 
     Durch einen detailieren Bericht mit Fotos und Fehlerbeschreibungen erhältst du ein umfassendes Bild über den Zustand deiner Ware.<br>
-    <br>
-    Unsere Angebote: <br>
+    Unsere Angebote:
     <ul><li>Musterziehung aus der Produktion</li>
     <li>Preshipment Inspection (PSI)</li>
     <li>Final Random Inspection (FRI)</li>

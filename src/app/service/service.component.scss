@@ -28,10 +28,6 @@
             right: 50px;
             top: -100px;
         }
-        .btn {
-            width: fit-content;
-            align-self: center;
-        }
     }
     .testitems {
         width: 100%;
@@ -97,6 +93,10 @@
             left: 50px;
             // bottom: 50px;
             top: 90px;
+        }
+        .btn {
+            width: fit-content;
+            align-self: flex-start;
         }
     }
 }
