@@ -26,6 +26,10 @@
     --ppage: 0px 200px; //padding page
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: var(--green);
