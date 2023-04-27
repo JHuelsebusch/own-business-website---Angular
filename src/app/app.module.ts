@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { StartpageComponent } from './startpage/startpage.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+
   constructor(private http: HttpClient) { }
 
   post = {
@@ -32,6 +33,7 @@ export class ContactComponent {
   emailSent: boolean = false;
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
   }
 
   onSubmit(ngForm: any) {

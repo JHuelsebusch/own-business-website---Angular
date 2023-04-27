@@ -9,6 +9,25 @@
     src: url(./assets/font/Roboto/Roboto-Black.ttf);
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+//   / Track /
+ ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: var(--darkgreen);
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(var(--green), var(--lightgreen));
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(var(--lightgreen), var(--lightgreen));
+}
+
 :root {
     --green: #027b77;
     --darkgreen: #00514e;
