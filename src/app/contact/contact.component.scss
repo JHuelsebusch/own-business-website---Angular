@@ -27,4 +27,90 @@
             top: -100px;
         }
     }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        gap: 30px;
+        position: relative;
+        &.ng-submitted {
+            .overlayAchor .ipt {
+                input,
+                textarea {
+                    &.ng-invalid {
+                        border: 1px solid red;
+                    }
+                }
+            }
+        }
+        .overlayAchor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 30px;
+            position: relative;
+            .ipt {
+                position: relative;
+                width: 100%;
+                input,
+                textarea {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    box-sizing: border-box;
+                    color: var(--darkgreen);
+                    padding: 15px 25px;
+                    background: var(--white);
+                    border: 1px solid var(--darkgreen);
+                    border-radius: 10px;
+                    font-family: var(--f);
+                    font-size: var(--fs);
+                    &::placeholder {
+                        font-family: var(--f);
+                        font-size: var(--fs);
+                        color: var(--darkgreen);
+                    }
+                    &:-webkit-autofill,
+                     :-webkit-autofill:hover,
+                     :-webkit-autofill:focus,
+                     :-webkit-autofill:active {
+                        transition: background-color 5000s ease-in-out 0s;
+                        -webkit-text-fill-color: #fff !important;
+                        border: 1px solid var(--lightgreen);
+                    }
+                    &.ng-touched,
+                    &.ng-dirty {
+                        &.ng-valid {
+                            border: 1px solid var(--lightgreen);
+                        }
+                    }
+                }
+                .error {
+                    position: absolute;
+                    bottom: -20px;
+                    color: red;
+                    font-size: 12px;
+                    margin: 0;
+                }
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background-color: #edededdb;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }
