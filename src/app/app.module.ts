@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { StartpageComponent } from './startpage/startpage.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { StartpageComponent } from './startpage/startpage.component';
     AboutComponent,
     FooterComponent,
     ContactComponent,
-    StartpageComponent
+    StartpageComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,
