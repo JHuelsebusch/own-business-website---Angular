@@ -17,11 +17,29 @@ footer {
         right: 20px;
         color: var(--green);
     }
-    a {
+    .links a {
         color: white;
         text-decoration: none;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--lightgreen);
+            transform-origin: bottom right;
+            transition: transform 225ms ease-out;
+        }
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
         &:hover {
-            text-decoration: underline;
+            // color: var(--lightgreen);
+            transition: 225ms ease-out;
         }
     }
     .socialmedia-section {

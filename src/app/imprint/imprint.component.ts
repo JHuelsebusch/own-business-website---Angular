@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./imprint.component.scss']
 })
 export class ImprintComponent {
-
+  ngOnInit(): void {
+    window.scrollTo(0,0)
+  }
 }

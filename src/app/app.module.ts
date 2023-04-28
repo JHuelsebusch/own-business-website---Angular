@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { StartpageComponent } from './startpage/startpage.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ImprintComponent } from './imprint/imprint.component';
     FooterComponent,
     ContactComponent,
     StartpageComponent,
-    ImprintComponent
+    ImprintComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
