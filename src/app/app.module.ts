@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { StartpageComponent } from './startpage/startpage.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { PartnerComponent } from './partner/partner.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     ContactComponent,
     StartpageComponent,
     ImprintComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    PartnerComponent
   ],
   imports: [
     BrowserModule,
