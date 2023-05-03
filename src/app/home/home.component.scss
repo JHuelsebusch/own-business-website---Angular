@@ -11,6 +11,7 @@ $brp3: 1200px;
     padding: var(--ppage);
     box-sizing: border-box;
     position: relative;
+    overflow-x: hidden;
     .headline {
         display: flex;
         flex-direction: column;
@@ -35,8 +36,9 @@ $brp3: 1200px;
         position: absolute;
         bottom: 0px;
         right: 0;
-        left: 0;
+        // left: 0;
         width: 100%;
+        min-width: 1100px;
         height: 300px;
         z-index: -1;
     }
@@ -59,6 +61,9 @@ $brp3: 1200px;
         justify-content: center;
         .logo {
             display: none;
+        }
+        .wave {
+            height: 200px !important;
         }
     }
 }
