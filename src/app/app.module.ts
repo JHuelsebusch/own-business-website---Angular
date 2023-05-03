@@ -18,6 +18,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { PartnerComponent } from './partner/partner.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

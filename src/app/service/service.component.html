@@ -1,6 +1,6 @@
 <section class="serviceSec" id="service">
-    <div class="card">
-        <img src="./../../assets/img/imgCPT.jpg" class="cardImg">
+    <div class="card" data-aos="fade-up">
+        <img src="./../../assets/img/imgCPT.jpg" class="cardImg" data-aos="zoom-in">
         <h2>Consumer Product Testing</h2>
         <p>
             Die Qualität eines Produktes ist entscheidend für seinen Erfolg. Bei der Qualitätssicherung ist eine professionelle Produktprüfung ein fester Bestandteil. Es ist unerlässlich, dass Importeure die Produkte vor dem Kauf gründlich prüfen und testen lassen.
@@ -8,7 +8,7 @@
             im Labor bis hin zu Inspektionen und Sichtprüfungen in Lagerhäusern oder Produktionsstätten – und das weltweit! Zudem stehen wir dir als Partner bei allen Fragen rund um die Themen Prüfungen und Qualität zur Seite.
         </p>
     </div>
-    <div class="testitems">
+    <div class="testitems" data-aos="fade-up" data-aos-anchor=".card">
         <div class="testCard" *ngFor="let service of services; let i = index">
 
             <div style="background-image: url('./../../assets/img/{{service.img}}');">
