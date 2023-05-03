@@ -1,3 +1,6 @@
+$brp1: 1750px;
+$brp2: 1400px;
+$brp3: 1200px;
 .serviceSec {
     width: 100%;
     display: flex;
@@ -20,7 +23,7 @@
         box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
         .cardImg {
             object-fit: contain;
-            width: 400px;
+            width: clamp(260px, 30%, 400px);
             box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
             position: absolute;
             right: 50px;
@@ -45,7 +48,7 @@
             background-position: center;
             background-size: cover;
             &:hover {
-                flex: 4;
+                flex: 8;
                 opacity: 1;
             }
             .servOverlay {
@@ -54,7 +57,7 @@
                     background-color: rgba(59, 56, 55, 0);
                     span {
                         transform: rotate(0);
-                        font-size: 44px;
+                        font-size: var(--h2);
                     }
                 }
                 span {
@@ -65,9 +68,48 @@
                     transform: rotate(-90deg);
                     transition: all .5s;
                     text-transform: uppercase;
-                    color: #ffffff;
+                    color: var(--white);
                     letter-spacing: .1em;
-                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                    text-shadow: -1px 0 var(--darkgreen), 0 1px var(--darkgreen), 1px 0 var(--darkgreen), 0 -1px var(--darkgreen);
+                }
+            }
+        }
+    }
+    .testitemsMobile {
+        width: 100%;
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .testCardMobile {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            // flex-wrap: wrap;
+            &:nth-child(3) {
+                width: 100%;
+            }
+            div {
+                width: 100%;
+                height: 10vh;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                .servOverlay {
+                    background-color: rgba(59, 56, 55, 0.5);
+                    span {
+                        font-size: var(--h3);
+                        min-width: 14em;
+                        padding: .5em;
+                        text-align: center;
+                        transition: all .5s;
+                        text-transform: uppercase;
+                        color: var(--white);
+                        letter-spacing: .1em;
+                        text-shadow: -1px 0 var(--darkgreen), 0 1px var(--darkgreen), 1px 0 var(--darkgreen), 0 -1px var(--darkgreen);
+                    }
                 }
             }
         }
@@ -85,7 +127,7 @@
         box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
         .cardImgDescr {
             object-fit: contain;
-            width: 400px;
+            width: clamp(260px, 30%, 400px);
             box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
             position: absolute;
             left: 50px;
@@ -96,5 +138,23 @@
             width: fit-content;
             align-self: flex-start;
         }
+    }
+}
+
+@media (max-width: $brp3) {
+    .descrCard {
+        padding: 50px !important;
+        .cardImgDescr {
+            display: none;
+            position: relative !important;
+            left: unset !important;
+            top: unset !important;
+        }
+    }
+    .testitems {
+        display: none !important;
+    }
+    .testitemsMobile {
+        display: flex !important;
     }
 }

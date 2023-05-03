@@ -18,6 +18,17 @@
             </div>
         </div>
     </div>
+    <div class="testitemsMobile">
+        <div class="testCardMobile" *ngFor="let service of services; let i = index">
+
+            <div style="background-image: url('./../../assets/img/{{service.img}}');" (click)="changeTest(i)">
+                <div class="servOverlay">
+                    <span>{{service.name}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="descrCard" id="testdescr">
         <img src="./../../assets/img/{{services[currentTest].img}}" class="cardImgDescr">
         <h2>{{services[currentTest].name}}</h2>

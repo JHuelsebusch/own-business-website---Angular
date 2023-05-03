@@ -1,3 +1,6 @@
+$brp1: 1750px;
+$brp2: 1400px;
+$brp3: 1200px;
 .aboutSec {
     width: 100%;
     display: flex;
@@ -20,7 +23,7 @@
         box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
         .cardImg {
             object-fit: contain;
-            height: 400px;
+            max-height: 400px;
             // box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
             border-bottom: 2px solid var(--darkgreen);
             position: absolute;
@@ -33,6 +36,18 @@
         }
         .profession {
             margin: 0;
+        }
+    }
+}
+
+@media (max-width: $brp3) {
+    .card {
+        padding: 50px !important;
+        .cardImg {
+            // display: none;
+            position: relative !important;
+            left: unset !important;
+            top: unset !important;
         }
     }
 }

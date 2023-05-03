@@ -1,3 +1,6 @@
+$brp1: 1750px;
+$brp2: 1400px;
+$brp3: 1200px;
 .home {
     width: 100%;
     height: 100vh;
@@ -19,6 +22,9 @@
         h2 {
             margin: 0;
             font-weight: 400;
+            span {
+                white-space: nowrap;
+            }
         }
     }
     .logo {
@@ -32,8 +38,27 @@
         left: 0;
         width: 100%;
         height: 300px;
+        z-index: -1;
     }
     .btnHome {
         font-size: var(--h3);
+    }
+}
+
+@media (max-width: $brp1) {
+    .logo {
+        height: 50vh;
+    }
+    .wave {
+        height: 270px !important;
+    }
+}
+
+@media(max-width: $brp3) {
+    .home {
+        justify-content: center;
+        .logo {
+            display: none;
+        }
     }
 }

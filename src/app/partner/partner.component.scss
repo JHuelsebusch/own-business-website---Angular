@@ -20,7 +20,7 @@
         box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
         .cardImg {
             object-fit: contain;
-            width: 400px;
+            width: clamp(260px, 30%, 400px);
             box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
             position: absolute;
             right: 50px;

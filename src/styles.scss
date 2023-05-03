@@ -14,12 +14,12 @@
 }
 
 //   / Track /
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     border-radius: 10px;
     background: var(--darkgreen);
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: linear-gradient(var(--green), var(--lightgreen));
 }
@@ -28,6 +28,10 @@
     background: linear-gradient(var(--lightgreen), var(--lightgreen));
 }
 
+// Breakpoints
+$brp1: 1750px;
+$brp2: 1400px;
+$brp3: 1200px;
 :root {
     --green: #027b77;
     --darkgreen: #00514e;
@@ -43,6 +47,18 @@
     --fbo: roboto-bold, sans-serif;
     --fbl: roboto-black, sans-serif;
     --ppage: 0px 200px; //padding page
+}
+
+@media (max-width: $brp1) {
+     :root {
+        --h1: 90px;
+    }
+}
+
+@media (max-width: $brp2) {
+     :root {
+        --ppage: 0px 100px;
+    }
 }
 
 html {
