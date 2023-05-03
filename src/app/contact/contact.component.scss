@@ -79,7 +79,7 @@
                      :-webkit-autofill:focus,
                      :-webkit-autofill:active {
                         transition: background-color 5000s ease-in-out 0s;
-                        -webkit-text-fill-color: #fff !important;
+                        -webkit-text-fill-color: var(--darkgreen) !important;
                         border: 1px solid var(--lightgreen);
                     }
                     &.ng-touched,

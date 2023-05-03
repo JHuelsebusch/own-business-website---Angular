@@ -26,7 +26,7 @@ export class ContactComponent {
     name: new FormControl('',[Validators.required],[]),
     email: new FormControl('',[Validators.required, Validators.email],[]),
     product: new FormControl('',[],[]),
-    message: new FormControl('',[Validators.required],[])
+    message: new FormControl('',[Validators.required, Validators.minLength(10)],[])
   })
 
   isSubmitted: boolean = false;
