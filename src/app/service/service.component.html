@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <div class="testitemsMobile">
+    <div class="testitemsMobile" data-aos="fade-up" data-aos-anchor=".card">
         <div class="testCardMobile" *ngFor="let service of services; let i = index">
 
             <div style="background-image: url('./../../assets/img/{{service.img}}');" (click)="changeTest(i)">

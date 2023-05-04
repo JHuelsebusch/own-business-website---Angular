@@ -7,8 +7,8 @@ $brp3: 1200px;
     flex-direction: column;
     align-items: center;
     padding: var(--ppage);
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: var(--ptop-card);
+    padding-bottom: var(--pbottom-card);
     box-sizing: border-box;
     .card {
         width: 100%;
@@ -18,12 +18,12 @@ $brp3: 1200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 50px;
+        padding: var(--pinner-card);
         box-sizing: border-box;
         box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
         .cardImg {
             object-fit: contain;
-            width: clamp(260px, 30%, 400px);
+            width: var(--w-card-img);
             box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.5);
             position: absolute;
             right: 50px;
@@ -84,6 +84,7 @@ $brp3: 1200px;
             width: 50%;
             display: flex;
             flex-direction: row;
+            overflow: hidden;
             // flex-wrap: wrap;
             &:nth-child(3) {
                 width: 100%;
@@ -143,7 +144,7 @@ $brp3: 1200px;
 
 @media (max-width: $brp3) {
     .descrCard {
-        padding: 50px !important;
+        padding: var(--pinner-card) !important;
         .cardImgDescr {
             display: none;
             position: relative !important;

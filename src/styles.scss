@@ -33,6 +33,7 @@ $brp1: 1750px;
 $brp2: 1400px;
 $brp3: 1200px;
 $brp4: 800px;
+$brp5: 470px;
 :root {
     --green: #027b77;
     --darkgreen: #00514e;
@@ -48,6 +49,11 @@ $brp4: 800px;
     --fbo: roboto-bold, sans-serif;
     --fbl: roboto-black, sans-serif;
     --ppage: 0px 200px; //padding page
+    --ptop-card: 200px;
+    --pbottom-card: 100px;
+    --pinner-card: 50px;
+    --w-card-img: clamp(230px, 34%, 400px);
+    --h-placeholder: 0px;
 }
 
 @media (max-width: $brp1) {
@@ -67,6 +73,16 @@ $brp4: 800px;
         --h1: 60px;
         --h2: 30px;
         --ppage: 0px 20px;
+        --ptop-card: 100px;
+        --pbottom-card: 40px;
+        --pinner-card: 25px;
+        --h-placeholder: 110px;
+    }
+}
+
+@media (max-width: $brp5) {
+     :root {
+        --h3: 16px;
     }
 }
 

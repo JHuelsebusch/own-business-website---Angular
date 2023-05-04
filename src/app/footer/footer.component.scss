@@ -1,3 +1,4 @@
+$brp4: 800px;
 footer {
     background-color: var(--darkgreen);
     border-top: 2px solid var(--lightgreen);
@@ -63,5 +64,12 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media (max-width: $brp4) {
+    .copyright {
+        right: unset !important;
+        bottom: 0px !important;
     }
 }
