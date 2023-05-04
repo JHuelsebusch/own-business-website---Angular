@@ -1,11 +1,21 @@
 <nav>
     <a href="#home"><img src="./../../assets/img/logo.png" class="logo"></a>
     <div class="links">
-        <a href="#home">Home</a>
-        <a href="#service">Service</a>
-        <a href="#labs">Labore</a>
-        <a href="#about">About</a>
-        <a href="#partner">Partner</a>
+        <ng-container *ngFor="let link of menuLinks">
+            <a href="{{link.href}}">{{link.name}}</a>
+        </ng-container>
         <a routerLink="contact">Kontakt</a>
+    </div>
+    <label for="check" class="menuButton">
+        <input id="check" type="checkbox" (click)="toggleMenu()">
+        <span class="top"></span>
+        <span class="mid"></span>
+        <span class="bot"></span>
+    </label>
+    <div class="linksMobile" *ngIf="isMenuOpen">
+        <ng-container *ngFor="let link of menuLinks">
+            <a href="{{link.href}}" (click)="closeMenu()">{{link.name}}</a>
+        </ng-container>
+        <a routerLink="contact" (click)="closeMenu()">Kontakt</a>
     </div>
 </nav>

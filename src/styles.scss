@@ -32,6 +32,7 @@
 $brp1: 1750px;
 $brp2: 1400px;
 $brp3: 1200px;
+$brp4: 800px;
 :root {
     --green: #027b77;
     --darkgreen: #00514e;
@@ -58,6 +59,12 @@ $brp3: 1200px;
 @media (max-width: $brp2) {
      :root {
         --ppage: 0px 100px;
+    }
+}
+
+@media (max-width: $brp4) {
+     :root {
+        --ppage: 0px 20px;
     }
 }
 
