@@ -64,6 +64,8 @@ $brp4: 800px;
 
 @media (max-width: $brp4) {
      :root {
+        --h1: 60px;
+        --h2: 30px;
         --ppage: 0px 20px;
     }
 }
