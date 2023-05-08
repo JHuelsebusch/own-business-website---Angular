@@ -43,6 +43,11 @@
                     img {
                         width: clamp(150px, 90%, 400px);
                         max-height: 200px;
+                        transition: all 125ms ease-in-out;
+                        &:hover {
+                            transform: scale(1.2);
+                            transition: all 125ms ease-in-out;
+                        }
                     }
                 }
             }

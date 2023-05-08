@@ -7,7 +7,7 @@
         </p>
         <div class="partner">
             <div *ngFor="let partner of partner">
-                <a href="{{partner.link}}"><img src="./../../assets/img/partner/{{partner.img}}"></a>
+                <a href="{{partner.link}}"><img src="./../../assets/img/partner/{{partner.img}}" data-aos="flip-right" data-aos-duration="15000" data-aos-easing="ease-out-cubic" data-aos-anchor-placement="bottom-bottom"></a>
                 <h3>{{partner.name}}</h3>
                 <p>{{partner.description}}</p>
             </div>
