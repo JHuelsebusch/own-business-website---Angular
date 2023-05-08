@@ -5,5 +5,13 @@
         <p>Wir sind stets darauf bedacht, unseren Kunden höchste Qualität und Professionalität zu bieten. Um diesem Anspruch gerecht zu werden, arbeiten wir eng mit zuverlässigen und kompetenten Geschäftspartnern zusammen. Jeder unserer Partner bringt einzigartige
             Fähigkeiten und Expertise mit. <br> Wir freuen uns, mit erstklassigen Unternehmen erfolgreich zusammenarbeiten zu können und möchten sie dir vorstellen.
         </p>
+        <div class="partner">
+            <div *ngFor="let partner of partner">
+                <a href="{{partner.link}}"><img src="./../../assets/img/partner/{{partner.img}}"></a>
+                <h3>{{partner.name}}</h3>
+                <p>{{partner.description}}</p>
+            </div>
+
+        </div>
     </div>
 </section>
