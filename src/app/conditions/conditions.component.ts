@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./conditions.component.scss']
 })
 export class ConditionsComponent {
-
+  ngOnInit(): void {
+    window.scrollTo(0,0)
+  }
 }
