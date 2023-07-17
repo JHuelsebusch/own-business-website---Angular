@@ -13,7 +13,7 @@
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit(formContact)" #formContact="ngForm">
             <div class="overlayAchor">
                 <div class="ipt">
-                    <input formControlName="name" type="text" placeholder="Name*" id="name">
+                    <input formControlName="name" type="text" placeholder="Name" id="name">
                     <ng-container *ngIf="contactForm.controls['name'] as name">
                         <ng-container *ngIf="name.invalid && isSubmitted">
                             <p class="error" *ngIf="name.errors?.['required']">Your name is required</p>
