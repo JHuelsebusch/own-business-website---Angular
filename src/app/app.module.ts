@@ -16,6 +16,7 @@ import { StartpageComponent } from './startpage/startpage.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { PartnerComponent } from './partner/partner.component';
+import { ConditionsComponent } from './conditions/conditions.component';
 
 
 
@@ -33,7 +34,8 @@ import { PartnerComponent } from './partner/partner.component';
     StartpageComponent,
     ImprintComponent,
     PrivacyComponent,
-    PartnerComponent
+    PartnerComponent,
+    ConditionsComponent
   ],
   imports: [
     BrowserModule,
