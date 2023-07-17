@@ -12,7 +12,7 @@ export class ContactComponent {
   constructor(private http: HttpClient) { }
 
   post = {
-    endPoint: 'http://huelsebusch.org/sendmail.php',
+    endPoint: 'https://huelsebusch.org/sendmail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
